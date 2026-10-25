@@ -259,6 +259,31 @@
   ],
   "projects": [
     {
+      "name": "Mitika IT Services on AWS: Nginx to Docker to Kubernetes",
+      "description": "One t2.micro, one static site, deployed three ways under a live domain: files on Nginx with Let's Encrypt, then a Docker container behind Nginx, then two pods on a single node k3s cluster. Infrastructure built with Terraform from a landing zone repo with remote state in S3 and DynamoDB locking, planned on every pull request and applied on merge by GitHub Actions through an OIDC role. VPC flow logs as firewall evidence. Finished with Kubernetes RBAC, admission control and certificate authentication exercises.",
+      "highlights": [
+        "AWS",
+        "S3",
+        "Terraform",
+        "GitHub Actions",
+        "OIDC",
+        "Docker",
+        "Kubernetes",
+        "k3s",
+        "Nginx",
+        "Let's Encrypt",
+        "VPC Flow Logs"
+      ],
+      "x_icons": [
+        "fa-brands fa-aws",
+        "fa-brands fa-docker",
+        "fa-solid fa-dharmachakra"
+      ],
+      "url": "https://app.notion.com/p/Mitika-IT-Services-on-AWS-one-server-three-deployments-built-from-a-pull-request-3ffab79520c681919309c1bc6d15af4d",
+      "x_link_label": "View on Notion",
+      "x_link_icon": "fa-solid fa-book-open"
+    },
+    {
       "name": "Ansible Lab – Linux Server Automation",
       "description": "Automated a small-scale Linux server environment using Ansible and VMware Workstation. Deployed and linked-cloned Ubuntu servers within a NAT network, configured static IPs via Netplan, disabled cloud-init DHCP overrides, and ran playbooks to install and configure Apache and MariaDB across managed nodes.",
       "highlights": ["Ansible", "Ubuntu", "VMware", "Netplan", "Apache", "MariaDB"],

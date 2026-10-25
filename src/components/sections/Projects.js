@@ -48,9 +48,9 @@ function Projects() {
                           className="is-size-7 has-text-link"
                         >
                           <span className="icon is-small">
-                            <i className="fab fa-github"></i>
+                            <i className={project.x_link_icon || "fab fa-github"}></i>
                           </span>
-                          <span> View on GitHub</span>
+                          <span> {project.x_link_label || "View on GitHub"}</span>
                         </a>
                       )}
                     </div>
