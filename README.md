@@ -23,10 +23,10 @@ The application is built with **React** and styled using the **Bulma CSS framewo
 
 ## 💻 Technologies Used
 
-- React (Create React App)
+- React 18 (built with Vite)
 - Bulma CSS
 - JSON Resume Schema
-- Node.js (v16.x recommended)
+- Node.js (v22 recommended, v20+ required)
 - Netlify (hosting and continuous deployment)
 
 ---
@@ -46,7 +46,8 @@ Clone the repository and install dependencies:
 git clone https://github.com/apaseay/personal-website-it.git
 cd personal-website-it
 npm install
-npm start
+npm run dev
+# production build: npm run build (outputs to build/)
 ```
 
 ⸻

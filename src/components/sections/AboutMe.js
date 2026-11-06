@@ -8,12 +8,12 @@ function AboutMe() {
       <div className="container has-text-centered">
         <figure className="image container is-180x180">
           <img
-            src={`${process.env.PUBLIC_URL}/${Resume.basics.picture}`}
+            src={`${import.meta.env.BASE_URL}${Resume.basics.picture}`}
             alt={Resume.basics.name}
             className="profile"
             onError={(e) => {
               e.target.onerror = null;
-              e.target.src = `${process.env.PUBLIC_URL}/${Resume.basics.x_pictureFallback}`;
+              e.target.src = `${import.meta.env.BASE_URL}${Resume.basics.x_pictureFallback}`;
             }}
           />
         </figure>

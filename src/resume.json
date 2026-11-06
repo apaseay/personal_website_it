@@ -300,7 +300,13 @@
     {
       "name": "Okta MCP Server",
       "description": "An AI-powered Okta IT automation server built with Claude Code and the Model Context Protocol (MCP). Enables natural language IT operations, provisioning users, auditing MFA compliance, managing groups, and more. All via conversation with Claude.",
-      "x_description_html": "An AI-powered Okta IT automation server built with <a href=\"https://claude.ai/code\" target=\"_blank\" rel=\"noopener noreferrer\">Claude Code</a> and the <a href=\"https://modelcontextprotocol.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Model Context Protocol (MCP)</a>. Enables natural language IT operations, provisioning users, auditing MFA compliance, managing groups, and more. All via conversation with Claude.",
+      "x_description_parts": [
+        "An AI-powered Okta IT automation server built with ",
+        { "text": "Claude Code", "url": "https://claude.ai/code" },
+        " and the ",
+        { "text": "Model Context Protocol (MCP)", "url": "https://modelcontextprotocol.io/" },
+        ". Enables natural language IT operations, provisioning users, auditing MFA compliance, managing groups, and more. All via conversation with Claude."
+      ],
       "highlights": ["Claude Code", "MCP", "Okta API", "Python", "IT Automation", "AI Ops"],
       "x_icons": ["fa-solid fa-fingerprint", "fa-solid fa-plug-circle-bolt", "fa-solid fa-user-shield"],
       "url": "https://github.com/apaseay/okta-mcp-server"

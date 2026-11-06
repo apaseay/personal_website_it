@@ -8,6 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-11-06
+### Security
+- Self-host Font Awesome and Bulma from npm instead of third-party CDNs (no external scripts run on the page)
+- Add Content-Security-Policy and other security headers via `netlify.toml`
+- Replace raw-HTML project description (`dangerouslySetInnerHTML`) with structured, https-only links
+- Netlify builds use `npm ci` so deployments match `package-lock.json` exactly
+- Remove unused Articles component that rendered unvalidated dev.to URLs
+- Remove unused `gh-pages` dependency and deploy script
+
+### Changed
+- Migrate from Create React App (deprecated) to Vite
+- Build on Node.js 22 (Node 16 is end-of-life)
+- The pre-change site is preserved at git tag `pre-security-hardening`
+
 ### Added
 - Certificates section
 - React v18.2.0

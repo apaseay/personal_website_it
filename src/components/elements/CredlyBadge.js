@@ -11,7 +11,7 @@ export default function CredlyBadge({
   const imgSrc =
     imageName?.startsWith("http")
       ? imageName
-      : `${process.env.PUBLIC_URL}/images/${imageName}`;
+      : `${import.meta.env.BASE_URL}images/${imageName}`;
 
   const figure = (
     <figure

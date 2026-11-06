@@ -1,6 +1,30 @@
 import React from "react";
 import Resume from "../../resume.json";
 
+// Only allow absolute https links in project descriptions.
+const isSafeUrl = (url) => {
+  try {
+    return new URL(url).protocol === "https:";
+  } catch {
+    return false;
+  }
+};
+
+// Render a description made of plain strings and { text, url } link objects,
+// so no raw HTML is ever injected into the page.
+const renderDescriptionParts = (parts) =>
+  parts.map((part, i) => {
+    if (typeof part === "string") return <React.Fragment key={i}>{part}</React.Fragment>;
+    if (part && isSafeUrl(part.url)) {
+      return (
+        <a key={i} href={part.url} target="_blank" rel="noopener noreferrer">
+          {part.text}
+        </a>
+      );
+    }
+    return <React.Fragment key={i}>{part?.text}</React.Fragment>;
+  });
+
 function Projects() {
   if (!Array.isArray(Resume.projects) || Resume.projects.length === 0) {
     return null;
@@ -56,8 +80,8 @@ function Projects() {
                     </div>
                   </div>
                   <p className="has-text-grey is-size-7" style={{ marginBottom: "0.75rem" }}>
-                    {project.x_description_html
-                      ? <span dangerouslySetInnerHTML={{ __html: project.x_description_html }} />
+                    {Array.isArray(project.x_description_parts)
+                      ? renderDescriptionParts(project.x_description_parts)
                       : project.description}
                   </p>
                   {Array.isArray(project.highlights) && project.highlights.length > 0 && (

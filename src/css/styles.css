@@ -19,7 +19,7 @@ html {
    HERO / PROFILE (LOCKED – DO NOT SCALE)
  ===================================================== */
  .has-bg-image {
-  background-image: url('../images/hero.jpeg');
+  background-image: url('/images/hero.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
