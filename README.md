@@ -43,8 +43,8 @@ The application is built with **React** and styled using the **Bulma CSS framewo
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/apaseay/personal-website-it.git
-cd personal-website-it
+git clone https://github.com/apaseay/personal_website_it.git
+cd personal_website_it
 npm install
 npm run dev
 # production build: npm run build (outputs to build/)

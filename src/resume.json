@@ -330,7 +330,7 @@
       "description": "This portfolio site, built with React and the Bulma CSS framework. All content is driven by a structured resume.json file following the JSON Resume open standard. Deployed on Netlify with a custom subdomain.",
       "highlights": ["React", "Bulma CSS", "JSON Resume", "Netlify", "JavaScript"],
       "x_icon": "fa-solid fa-code",
-      "url": "https://github.com/apaseay/personal-website-it"
+      "url": "https://github.com/apaseay/personal_website_it"
     }
   ],
   "publications": [],
